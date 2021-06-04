@@ -1,0 +1,68 @@
+/*
+Static Pixel Size: number er pore "px" diye static use kora jay
+Dynamic Pixel Size:
+                1.  % diye korte hoy:
+                    100% = 16px
+                    90px  = (90/16)x100 = 5.625 x 100 = 562.5% 
+                2. em diye use kora jay
+                    1em = 100% = 16px
+                    90px = 90/16 = 5.625em
+                    em parent er size er upore inherit kore
+                3. Parent inheritence problem solve korar jonno "ripped em" or "rem" use kora hoy
+
+
+*/
+body{
+    margin: 0px;
+    text-align: center;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position:relative;
+  padding-top: 100px;
+  
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5.625em;
+    padding-top: 50px;
+}
+
+h2{
+     font-family: 'Lobster', cursive;
+     font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Crimson Text', serif;
+}  
+
+.middle-container {
+    position: relative;
+}
+
+.bottom-container {
+    
+}
+
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 30rem;
+
+}
+.bottom-cloud {
+    position: absolute; /*parent directory hisab e top-container k dhora hoise ei jonno oitar position k reltive kore dea ase*/
+    left: 20.5rem;
+}
+
+
+.profile img {
+    height:200px;
+    width: 200px;
+    position: absolute;
+    left: 5em;
+    top: 15em;
+}
