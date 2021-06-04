@@ -1,68 +1,70 @@
-/*
-Static Pixel Size: number er pore "px" diye static use kora jay
-Dynamic Pixel Size:
-                1.  % diye korte hoy:
-                    100% = 16px
-                    90px  = (90/16)x100 = 5.625 x 100 = 562.5% 
-                2. em diye use kora jay
-                    1em = 100% = 16px
-                    90px = 90/16 = 5.625em
-                    em parent er size er upore inherit kore
-                3. Parent inheritence problem solve korar jonno "ripped em" or "rem" use kora hoy
-
-
-*/
-body{
-    margin: 0px;
-    text-align: center;
-}
-
-.top-container {
-  background-color: #E4F9F5;
-  position:relative;
-  padding-top: 100px;
-  
-}
-
-h1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 5.625em;
-    padding-top: 50px;
-}
-
-h2{
-     font-family: 'Lobster', cursive;
-     font-size: 2.5rem;
-}
-
-h3 {
-    font-family: 'Crimson Text', serif;
-}  
-
-.middle-container {
-    position: relative;
-}
-
-.bottom-container {
+<!-- HTML is only used for structure, designing will be done in CSS 
+    1. Center align - block element e widht set kora thakle 
+    margin auto diye set kora jay na manually korte hoy for 
+    each side.
     
-}
+    -> Font embade kore dear jonno head er vitore embaded er link dea hoy
 
-.top-cloud {
-    position: absolute;
-    top: 50px;
-    right: 30rem;
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosiur Rahman</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script&family=Lobster&display=swap"
+        rel="stylesheet">
+   
+</head>
+<body>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="clouds">
+        <h1>I am Mosiur</h1>
+        <h2>A Network and System administrator</h2>
+        <img src="images/mountain.png" alt="mountain">
+        <img class="bottom-cloud" src="images/cloud.png" alt="clouds">
+        
+    </div>
+        <div class="middle-container">
+            <div class="profile">
+                <img src="images/1.png" alt="Mosiur Rahman">
+                <h2>Hello.</h2>
+                <p>I Love to meet new people and also like to hear and learn about new technologies.</p>
+            </div>
+            <hr>
+            <div class="skills">
+                <h2>My Skills.</h2>
+                <div class="skill-row">
+                    <img class="" src="" alt="">
+                    <h3>Routing and Switching</h3>
+                    <p>I can configure, troublesoot OSPF, BGP, MPLS, Multicast, STP etc in devices from multiple vendor.</p>
+                </div>
+                <div class="skill-row">
+                    <img class="" src="" alt="">
+                    <h3>Programming</h3>
+                    <p>Python, Golang</p>
+                </div>
+                <div class="skill-row">
+                    <img class="" src="" alt="">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS</p>
+                </div>
+            </div>
+            <hr>
+            <div class="contact-me">
+                <h2>Get In Touch</h2>
+                <h3>If you want to hire me or consult me!</h3>
+                <p>I am open for consult 7 days a week.</p>
+                <a class="btn" href="mailto:connect.mosiur@email.com">CONTACT ME</a>
+            </div>
 
-}
-.bottom-cloud {
-    position: absolute; /*parent directory hisab e top-container k dhora hoise ei jonno oitar position k reltive kore dea ase*/
-    left: 20.5rem;
-}
-
-
-.profile img {
-    height:200px;
-    width: 200px;
-    position: absolute;
-    left: 5em;
-    top: 15em;
-}
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/md-mosiur-rahman-60aa8716a/">Mosiur Rahman Linkedin</a>
+        <p>© 2018 Name Surname.</p>
+    </div>
+</body>
+</html>
