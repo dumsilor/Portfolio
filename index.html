@@ -1,28 +1,68 @@
+/*
+Static Pixel Size: number er pore "px" diye static use kora jay
+Dynamic Pixel Size:
+                1.  % diye korte hoy:
+                    100% = 16px
+                    90px  = (90/16)x100 = 5.625 x 100 = 562.5% 
+                2. em diye use kora jay
+                    1em = 100% = 16px
+                    90px = 90/16 = 5.625em
+                    em parent er size er upore inherit kore
+                3. Parent inheritence problem solve korar jonno "ripped em" or "rem" use kora hoy
 
-<!DOCTYPE html>
-<html lang= "en">
-<head>
-  <title>Mosiur's Portal</title>
-  <link rel="stylesheet" href="css/master.css">
-</head>
 
-<body>
-  <!--<img src = "images/sunset.jpg" alt="Banner Sunset" width=75%>-->
-<h1>Hi There, <br>I am Mosiur. Welcome to My portal</h1>
-<h2>About Me</h2>
-<p>I am a System Engineer at InterCloud Limited</p>
-<p>I have BSc on EEE from American International University Bangladesh</p>
-<h2>Credentials and Portfolio</h2>
+*/
+body{
+    margin: 0px;
+    text-align: center;
+}
 
-<p><a href="resume.html">My Resume</a> | <a href = "https://www.linkedin.com/in/md-mosiur-rahman-60aa8716a/">My Linkedin</a>
-<h2>Contact</h2>
+.top-container {
+  background-color: #E4F9F5;
+  position:relative;
+  padding-top: 100px;
+  
+}
 
-<p>Email: <br>dum.silor@gmail.com<a href = "mailto:dum.silor@gmail.com">(Click Here)</a><br>mosiur.or@gmail.com<a href = "mailto:mosiur.or@gmail.com">(Click Here)</a></p>
-</body>
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5.625em;
+    padding-top: 50px;
+}
 
-<footer>
-  <hr>
-  <code>Copyright (c) 2020 Mosiur Rahman</code>
-</footer>
+h2{
+     font-family: 'Lobster', cursive;
+     font-size: 2.5rem;
+}
 
-</html>
+h3 {
+    font-family: 'Crimson Text', serif;
+}  
+
+.middle-container {
+    position: relative;
+}
+
+.bottom-container {
+    
+}
+
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 30rem;
+
+}
+.bottom-cloud {
+    position: absolute; /*parent directory hisab e top-container k dhora hoise ei jonno oitar position k reltive kore dea ase*/
+    left: 20.5rem;
+}
+
+
+.profile img {
+    height:200px;
+    width: 200px;
+    position: absolute;
+    left: 5em;
+    top: 15em;
+}
