@@ -1,0 +1,15 @@
+body{
+    background: #FAD4D4;
+}
+
+.main_image{
+    width: 50%;
+    height: 25%;
+    display: inline-block;
+}
+
+.intro{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15rem;
+}

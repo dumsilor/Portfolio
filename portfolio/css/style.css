@@ -1,0 +1,91 @@
+/* .main_body {
+} */
+body{
+    background: #F4E0B9; 
+}
+
+.body_backgound{
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+}
+ .about_us {
+  background: rgba(255, 220, 44, 0.45);
+  text-align: Center;
+  padding: 6rem;
+  color: #495E57;
+  width: 50%;
+  margin: auto;
+  border-radius: 5rem;
+  margin-top: 5rem;
+  
+}
+
+.about_us>h1{
+    padding-bottom: 3rem;
+}
+
+.crew {
+    text-align: center;
+    margin-top: 3rem;
+    background: #B0A695;
+    
+}
+
+.crew_member {
+    padding: 2rem;
+    padding: 2rem 10rem;
+    display: inline-block;
+    color: #45474B;
+}
+
+
+.crew_member>p:nth-child(2){
+    margin-bottom: 0px;
+    color: #F4CE14;
+    font-family: 'Borel', cursive;
+    padding-top:1rem;
+}
+
+.crew_sirajam{
+    height: 255px;
+}
+
+.crew_sirajam>p:nth-child(3){
+    width: 200px;
+    margin-bottom: 0px;
+    bottom: 1rem;
+}
+
+.crew_title{
+  display: block;
+  padding:5rem 0rem;
+  color: #45474B;
+  font-weight: bolder;
+
+}
+ 
+.crew_image {
+  height: 200px;
+  width: 200px;
+  border-radius:25%;
+} 
+
+.crew_sawrav{
+    height: 255px;
+    padding: 2rem 10rem 2rem 10rem;
+}
+
+/* .navbar-brand{
+    background: #F4CE14;
+    border-radius: 25%;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+} */
+
+.navbar-img{
+    margin-left: 1rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
